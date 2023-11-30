@@ -1,0 +1,5 @@
+faça um app de viagem:
+1. preço do combustivel por tipo;
+2. gasto medio de combustivel do veiculo por km;
+3. distancia emm km da viagem;
+4. valor total da viagem
