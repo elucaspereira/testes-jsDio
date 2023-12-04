@@ -15,9 +15,9 @@ let nota3 = 9;
 
 let totalizaNotas = (nota1 + nota2 + nota3) / 3
 
-if(totalizaNotas <= 5){
+if(totalizaNotas < 5){
     console.log(`Sua média é de ${totalizaNotas.toFixed(2)}, Infelizmente vc esta Reprovado`);
-}else if(totalizaNotas > 5 && totalizaNotas < 7){
+}else if(totalizaNotas >= 5 && totalizaNotas <= 7){
     console.log(`Sua média é de ${totalizaNotas.toFixed(2)}, Infelizmente vc esta de Recuperação`);
 }else{
     console.log(`Sua média é de ${totalizaNotas.toFixed(2)}, Parabens vc esta aprovado`);
