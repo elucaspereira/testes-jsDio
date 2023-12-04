@@ -14,7 +14,7 @@ PESO/(ALTURA * ALTURA)
 let altura = 1.55;
 let peso = 50;
 
-let imc = Number.peso / (Number.altura * Number.altura);
+const imc = Number.peso / (Number.altura * Number.altura);
 
 
 if(imc <= 16){
