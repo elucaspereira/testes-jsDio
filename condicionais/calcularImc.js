@@ -12,17 +12,23 @@ MAIOR QUE 40 OBESIDADE GRAU III
 PESO/(ALTURA * ALTURA)
 */
 let altura = 1.55;
-let peso = 43;
+let peso = 100;
 
-const imc = 18.5//peso / (altura * altura);
+const imc = peso / (altura * altura);
 
 
 if(imc <= 16){
     console.log(`Seu IMC é de ${imc.toFixed(1)} você está: Muito abaixo do Peso`);
-}else if( imc >= 17 && imc <= 18.4){
+}else if( imc > 17 && imc <= 18.40){
     console.log(`Seu IMC é de ${imc.toFixed(1)} você está: Abaixo do peso`);
-}else if(imc >= 18.5 && imc <= 24){
-    console.log(imc);
+}else if(imc >= 18.5 && imc <= 24.99){
+    console.log(`Seu IMC é de ${imc.toFixed(1)} você está: Peso normal`);
+}else if(imc >= 25 && imc <= 29.99){
+    console.log(`Seu IMC é de ${imc.toFixed(1)} você está: Acima do peso`);
+}else if(imc >= 30 && imc <= 34.99 ){
+    console.log(`Seu IMC é de ${imc.toFixed(1)} você está: Obesidade grau I`);
+}else if(imc >= 35 && imc <= 40 ){
+    console.log(`Seu IMC é de ${imc.toFixed(1)} você está: Obesidade grau II`);
 }else{
-    console.log('aqui');
-}
+    console.log(`Seu IMC é de ${imc.toFixed(1)} você está: Obesidade grau III`);
+};
