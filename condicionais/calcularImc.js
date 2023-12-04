@@ -12,16 +12,16 @@ MAIOR QUE 40 OBESIDADE GRAU III
 PESO/(ALTURA * ALTURA)
 */
 let altura = 1.55;
-let peso = 50;
+let peso = 43;
 
-const imc = Number.peso / (Number.altura * Number.altura);
+const imc = 18.5//peso / (altura * altura);
 
 
 if(imc <= 16){
     console.log(`Seu IMC é de ${imc.toFixed(1)} você está: Muito abaixo do Peso`);
-}else if( imc > 17 && imc <= 18.4){
+}else if( imc >= 17 && imc <= 18.4){
     console.log(`Seu IMC é de ${imc.toFixed(1)} você está: Abaixo do peso`);
-}else if(imc > 18 && imc <= 24){
+}else if(imc >= 18.5 && imc <= 24){
     console.log(imc);
 }else{
     console.log('aqui');
