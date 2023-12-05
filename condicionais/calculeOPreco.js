@@ -10,7 +10,7 @@ CONDIÇÕES DE PAGAMENTO:
 */
 
 let nomeProduto = 'Monitor LG 19,5 polegadas';
-let preco = 450.25;
+let preco = 100;
 
 //calcula o desconto do pagamento debito
 function pagDebito(){
@@ -35,7 +35,7 @@ function pagParcelado(){
     console.log(`O valor a ser Pago com acréssimo de 10% é: R$ ${totPagar.toFixed(2)} parcelado loja`);
 }
 //selecione uma forma de pagamento de acordo com as opçoes acima
-const condicaoPagamento = 10;
+const condicaoPagamento = 1;
 
 if(condicaoPagamento < 1 || condicaoPagamento > 4){
     console.log('Forma de pagamento invalida Verifique')
