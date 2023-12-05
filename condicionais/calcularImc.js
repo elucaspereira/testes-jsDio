@@ -12,7 +12,7 @@ MAIOR QUE 40 OBESIDADE GRAU III
 PESO/(ALTURA * ALTURA)
 */
 let altura = 1.55;
-let peso = 100;
+let peso = 50;
 
 const imc = peso / (altura * altura);
 
