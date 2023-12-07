@@ -9,7 +9,9 @@ class Viagem{
         this.destino = destino;
         this.kmTotal = kmTotal;
         this.valMedioComb = valMedioComb;
+
     }
+
 };
 
 class Carro {
@@ -20,6 +22,11 @@ class Carro {
         this.motorizacao = motorizacao;
         this.mediaPorLt = mediaPorLt;
     }
+
+    calculaDespesa(kmTotal, mediaPorLt, valMedioComb){
+        return kmTotal / mediaPorLt *valMedioComb
+        
+    }
 };
 let carro = new Carro(
     'volksvagem',
@@ -27,6 +34,7 @@ let carro = new Carro(
     '2006',
     1.6,
     12
+
 );
 
 let viagem1 = new Viagem(
@@ -36,12 +44,8 @@ let viagem1 = new Viagem(
     6.38
 
 );
-function calculaDespesa(){
+console.log(`A sua viagem para ${viagem1.destino} tera um gasto com combustivel de R$ `+ carro.calculaDespesa(viagem1.kmTotal,carro.mediaPorLt,viagem1.valMedioComb).toFixed(2));
 
-    totalDespesas = viagem1.kmTotal  / carro.mediaPorLt * viagem1.valMedioComb
-    console.log(`A sua viagem para ${viagem1.destino} tera um gasto com combustivel de R$ ${totalDespesas.toFixed(2)}`)
-}
-calculaDespesa()
 
 
 
