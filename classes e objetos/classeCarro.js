@@ -39,7 +39,7 @@ let viagem1 = new Viagem(
 function calculaDespesa(){
 
     totalDespesas = viagem1.kmTotal  / carro.mediaPorLt * viagem1.valMedioComb
-    console.log(totalDespesas)
+    console.log(`A sua viagem para ${viagem1.destino} tera um gasto com combustivel de R$ ${totalDespesas.toFixed(2)}`)
 }
 calculaDespesa()
 
