@@ -1,5 +1,6 @@
-const entradas = [5,50,10,98,23]
+const entradas = [10,50,10,98,23,100,160,320]
 let i = 0;
+
 function gets(){
     const valor = entradas[i];
     i++;
