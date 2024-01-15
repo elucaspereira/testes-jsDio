@@ -2,6 +2,7 @@
 FAÇA UM PROGRAMA QUE CAUCULE E IMPRIMA O SALARIO A SER TRANSFERIDO PARA UM FUNCIONARIO
 PARA REALIZAR O CAUCULO RECEBA O VALOR BRUTO DO SALARIO E O ADICIONAL DOS BENEFICIOS
 O SALARIO A SER TRANSFERIDO É CALCULADO DA SEGUINTE MANEIRA
+
 VALOR BRUTO - PERCENTUAL DE IMPOSTO MEDIANTE A FAIXA SALARIAL + ADICIONAL DE BENEFICIOS
 
 ALICOTAS: 
@@ -14,4 +15,32 @@ const {gets, print} = require('./funcoes-aux ex03');
 
 const valorSalarioBruto = gets();
 const valorAdicionalDosBeneficios = gets();
+
+function pegarPercentualComBaseNoSalario(salario){
+    if(salario > 0 && salario <= 1100){
+        return 5;
+    }else if(salario > 1100 && salario <= 2500){
+        return 10;
+    }else{
+        return 15;
+    }
+
+    
+}
+
+function calculaPorcentagem(valor,percentual){
+    return  valor * (percentual/100)
+}
+
+
+
+function salarioATransferir(salario,percentual,adicional){
+    return salario - percentual + adicional; 
+}
+
+
+
+const valorATasferir = valorSalarioBruto - (calculaPorcentagem(valorSalarioBruto,pegarPercentualComBaseNoSalario(valorSalarioBruto))) + valorAdicionalDosBeneficios
+
+print(valorATasferir)
 
