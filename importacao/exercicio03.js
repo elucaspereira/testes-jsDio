@@ -38,9 +38,11 @@ function salarioATransferir(salario,percentual,adicional){
     return salario - percentual + adicional; 
 }
 
+const aliquota = pegarPercentualComBaseNoSalario(valorSalarioBruto)
 
+const valorImposto = calculaPorcentagem(valorSalarioBruto, aliquota)
 
-const valorATasferir = valorSalarioBruto - (calculaPorcentagem(valorSalarioBruto,pegarPercentualComBaseNoSalario(valorSalarioBruto))) + valorAdicionalDosBeneficios
+const valorATasferir = valorSalarioBruto - valorImposto + valorAdicionalDosBeneficios
 
 print(valorATasferir)
 
