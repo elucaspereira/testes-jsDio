@@ -27,7 +27,7 @@
 
 .pokemon .name {
     color: #FFF;
-    margin-bottom: 0;
+    margin-bottom: .25rem;
 }
 
 .pokemon .detail {
@@ -37,7 +37,7 @@
     justify-content: space-between;
 }
 
-.pokemon .types {
+.pokemon .detail .types {
     padding: 0;
     margin: 0;
     list-style: none;
